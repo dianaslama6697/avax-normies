@@ -25,13 +25,13 @@
             /* position: absolute; */
             top: 20px;
             left: 50px;
-            width: 220px;
+            width: 180px;
         }
         .idle-logo {
             /* position: absolute; */
             top: 20px;
             right: 50px;
-            width: 200px;
+            width: 180px;
         }
         .content {
             position: relative;
@@ -73,6 +73,16 @@
         .buttons button {
             width: 150px;
         }
+        @keyframes kitten {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+        .kitten:hover {
+            animation: kitten 0.3s ease-in-out;
+        }
         @media (max-width: 768px) {
             .logo, .idle-logo {
                 width: 180px;
@@ -103,6 +113,16 @@
                 flex-direction: column;
                 align-items: center;
             }
+        @keyframes kitten {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+        .kitten:hover {
+            animation: kitten 0.3s ease-in-out;
+        }
         }
         @media (max-width: 555px) {
             .logo, .idle-logo {
@@ -155,7 +175,7 @@
             </button>
         </div>
 
-         <a href="coming_soon.html">
+         <a href="coming_soon.html" class="kitten">
             <img src="asset/img-kitten.png" alt="Kitten" class="kitten">
          </a>
 
