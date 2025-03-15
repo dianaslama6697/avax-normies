@@ -17,16 +17,18 @@
             font-weight: bold;
         }
         .header-logo {
-            margin: 50px 0px 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 30px 0px 30px;
         }
         .logo {
-            position: absolute;
+            /* position: absolute; */
             top: 20px;
             left: 50px;
             width: 220px;
         }
         .idle-logo {
-            position: absolute;
+            /* position: absolute; */
             top: 20px;
             right: 50px;
             width: 200px;
@@ -37,7 +39,7 @@
             flex-direction: row;
             align-items: flex-end;
             justify-content: center;
-            height: 80vh;
+            height: 65vh;
             border-bottom: 2px solid black;
         }
         .carousel-inner img {
@@ -64,6 +66,8 @@
         }
         .buttons {
             display: flex;
+            flex-direction: column;
+            align-items: center;
             gap: 10px;
         }
         .buttons button {
@@ -71,7 +75,7 @@
         }
         @media (max-width: 768px) {
             .logo, .idle-logo {
-                width: 150px;
+                width: 180px;
             }
             .content {
                 position: relative;
@@ -79,7 +83,7 @@
             flex-direction: row;
             align-items: flex-end;
             justify-content: center;
-            max-height: 450px;
+            max-height: 580px;
             }
             .carousel-inner img {
                 max-width: 80%;
@@ -96,8 +100,13 @@
                 max-width: 90%;
             }
             .buttons {
-                flex-direction: row;
+                flex-direction: column;
                 align-items: center;
+            }
+        }
+        @media (max-width: 555px) {
+            .logo, .idle-logo {
+                width: 150px;
             }
         }
     </style>
@@ -115,10 +124,25 @@
                     <img src="main-character.png" alt="Character 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="girl-red.png" alt="Character 2">
+                    <img src="char-red.png" alt="Character 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="man-kribo.png" alt="Character 3">
+                    <img src="char-kribo.png" alt="Character 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="char-ibu.png" alt="Character 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="char-pink.png" alt="Character 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="char-chiken.png" alt="Character 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="char-yellow.png" alt="Character 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="char-baseball.png" alt="Character 3">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#characterCarousel" data-bs-slide="prev">

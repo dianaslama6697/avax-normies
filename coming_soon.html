@@ -69,22 +69,33 @@
             width: 18vh;
             cursor: pointer;
         }
+
         @media (max-width: 768px) {
+            .header-logo{
+                margin-top: 30px;
+            }
+            .logo, .idle-logo {
+                width: 180px;
+            }
             .content {
                 padding: 20px;
+                margin-top: 0px;
+                height: 500px;
             }
-            .coming-soon {
+            /* .coming-soon {
                 width: 90%;
-            }
+            } */
             .interactive-container {
                 justify-content: center;
             }
             .text-peek {
-                width: 120px;
+                width: 220px;
+                margin-bottom: 50px;
             }
             .img-puppy {
-                width: 80px;
+                width: 120px;
             }
+            
         }
     </style>
 </head>
@@ -101,8 +112,14 @@
     </div>
     <div class="content">
         <img src="logo-coming-soon.png" alt="Coming Soon Logo" class="coming-soon">
-        <div class="interactive-container">
+        <!-- <div class="mobile-bottom">
             <img src="text-peek.png" alt="Peek Text" class="text-peek">
+            <a href="https://twitter.com/intent/tweet?text=Halo%20dunia!&hashtags=twitter,sharing&via=akunanda" target="_blank">
+                <img src="img-puppy.png" alt="Puppy Image"  class="img-puppy" >
+            </a>
+        </div>     -->
+        <div class="interactive-container">
+        <img src="text-peek.png" alt="Peek Text" class="text-peek">
             <a href="https://twitter.com/intent/tweet?text=Halo%20dunia!&hashtags=twitter,sharing&via=akunanda" target="_blank">
                 <img src="img-puppy.png" alt="Puppy Image"  class="img-puppy" >
             </a>
